@@ -1,5 +1,7 @@
 ## Challenge Geo - Torneo de tenis
 
+![CI workflow](https://github.com/unicolas/challenge-geop/actions/workflows/ci.yml/badge.svg)
+
 API Platform + Doctrine/PostgreSQL + PHPUnit
 
 - La solución a la simulación de torneos se expone a partir del servicio `src\Service\ServiceTournamentPlayerService` y a través de las definiciones en `src\Domain`.
@@ -13,16 +15,13 @@ API Platform + Doctrine/PostgreSQL + PHPUnit
 
 
 ```sh
-$ docker compose build --no-cache
-$ docker compose up -d
+$ docker compose build --no-cache --pull
+$ docker compose up --wait
 ```
 
 ```sh
-$ docker compose exec php sh
-# dev
-$ composer install
-$ bin/console doctrine:migrations:migrate
 # test
+$ docker compose exec php sh
 $ bin/console doctrine:database:create --env=test
 $ bin/console doctrine:migrations:migrate --env=test
 $ bin/phpunit --testdox
