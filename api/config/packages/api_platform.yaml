@@ -1,9 +1,10 @@
 api_platform:
-    title: Hello API Platform
+    title: Tennis tournaments API
     version: 1.0.0
     # Mercure integration, remove if unwanted
     mercure: ~
     formats:
+        json: ['application/json']
         jsonld: ['application/ld+json']
     docs_formats:
         jsonld: ['application/ld+json']
@@ -19,3 +20,4 @@ api_platform:
             rfc_7807_compliant_errors: true
     event_listeners_backward_compatibility_layer: false
     keep_legacy_inflector: false
+    show_webby: false

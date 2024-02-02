@@ -26,11 +26,15 @@
         "symfony/security-bundle": "6.4.*",
         "symfony/serializer": "6.4.*",
         "symfony/twig-bundle": "6.4.*",
+        "symfony/uid": "6.4.*",
         "symfony/validator": "6.4.*",
         "symfony/yaml": "6.4.*"
     },
     "require-dev": {
         "api-platform/schema-generator": "^5.0",
+        "dama/doctrine-test-bundle": "^8.0",
+        "friendsofphp/php-cs-fixer": "^3.48",
+        "phpstan/phpstan": "^1.10",
         "symfony/browser-kit": "6.4.*",
         "symfony/css-selector": "6.4.*",
         "symfony/debug-bundle": "6.4.*",
